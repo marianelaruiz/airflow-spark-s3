@@ -1,4 +1,4 @@
-# Apache Airflow & Spark & S3(Simple Storage Service)
+# Apache Airflow & Spark & Amazon S3(Simple Storage Service)
 
 This repository is intended for orchestrating Spark applications using the Apache Airflow tool with AWS S3 storage.
 
@@ -6,7 +6,7 @@ This repository is intended for orchestrating Spark applications using the Apach
 
 1. [Technologies](#technologies)
 2. [Install and Run](#install-and-run)
-3. [S3 (Simple Storage Service) Configuration](#s3-simple-storage-service-configuration)
+3. [Amazon S3 (Simple Storage Service) Configuration](#s3-simple-storage-service-configuration)
 4. [Apache Airflow Webserver](#apache-airflow-webserver)
 5. [Databricks Lakehouse Architecture](#databricks-lakehouse-architecture)
 
@@ -54,7 +54,7 @@ source venv/bin/activate
    ```bash
   bash setup_airflow.sh
    ```
-### 3. S3 Configuration
+### 3. Amazon S3 Configuration
 You need to create an S3 bucket for this project. Save the bucket name for the following steps.
 
 Upload the JSON files provided in the `lakehouse/landing` folder of this repository to `lakehouse/landing` in your S3 bucket.
