@@ -1,0 +1,60 @@
+# ----------------------------------------
+# General Python
+__pycache__/Python general
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+.env
+.envrc
+*.egg-info/
+.cache/
+.vscode/
+
+# ----------------------------------------
+# Virtual environments
+venv/
+.env/
+env/
+.airflow_venv/
+airflow_venv/
+.venv/
+
+# ----------------------------------------
+# Airflow
+airflow.cfg
+airflow.db
+airflow-webserver.pid
+logs/
+unittests.cfg
+webserver_config.py
+
+# ----------------------------------------
+# Spark
+spark-warehouse/
+metastore_db/
+.derby/
+
+# Data output folders
+lakehouse/bronze/
+lakehouse/silver/
+lakehouse/gold/
+
+# ----------------------------------------
+#  Parquet and temporary files
+*.parquet
+*.orc
+*.avro
+*.csv
+*.out
+
+# ----------------------------------------
+# IDEs
+.idea/
+*.iml
