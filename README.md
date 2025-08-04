@@ -96,7 +96,7 @@ Yo have two options:
    NOTE: Update `S3_PATH` to use your bucket name
    ```bash
    cd airflow
-      export S3_PATH="s3a://my-bucket-name/"
+   export S3_PATH="s3a://my-bucket-name/"
    export AIRFLOW_HOME=$(pwd)
    airflow standalone
    ```
@@ -113,7 +113,7 @@ From here, you can access the address above in your browser and log in.
 
 The first configuration of the web server should be to change the host in Airflow. To do this, go to Admin > Connections > Search for "spark_default" > Change the "Host" field from "yarn" to "local" and save.
 
-Then, you can go to the "Search Dags" field and search for "dag_lakehouse". Click on the search result, and you will have access to the interface related to the created Airflow instance. You can execute it by clicking the "Trigger DAG" button in the upper right corner of the screen, where you can observe the execution order and whether the Spark applications were successful or not. 
+Then, you can go to the "Search Dags" field and search for `dag_lakehouse`. Click on the search result, and you will have access to the interface related to the created Airflow instance. You can execute it by clicking the "Trigger DAG" button in the upper right corner of the screen, where you can observe the execution order and whether the Spark applications were successful or not. 
 
 You can check that everything ran succesfully by looking in your s3 bucket for the bronze, silver, and gold folders, where a subfolder called `parquet` will be created.
 
