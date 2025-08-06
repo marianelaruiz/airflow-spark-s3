@@ -93,7 +93,7 @@ Yo have two options:
 
 2. **Start Airflow** :
    For a quicker setup without creating a user, you can use the standalone mode:
-   NOTE: Update `S3_PATH` to use your bucket name
+   **NOTE: Update `S3_PATH` variable to use your bucket name**
    ```bash
    cd airflow
    export S3_PATH="s3a://my-bucket-name/"
