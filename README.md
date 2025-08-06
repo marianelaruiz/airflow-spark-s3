@@ -4,20 +4,19 @@ This repository is intended for orchestrating Spark applications using the Apach
 
 ## Table of Contents
 
-1. [Technologies](#technologies)
+1. [Prerequisites](#prerequisites)
 2. [Install and Run](#install-and-run)
 3. [Amazon S3 (Simple Storage Service) Configuration](#s3-simple-storage-service-configuration)
 4. [Apache Airflow Webserver](#apache-airflow-webserver)
 5. [Databricks Lakehouse Architecture](#databricks-lakehouse-architecture)
 
-## 1. Technologies
-
-A list of technologies used within the project:
+## 1. Prerequisites
 
 * [Python](https://www.python.org): Version 3.12
 * [Pyspark](https://spark.apache.org/docs/latest/api/python/index.html): Version 3.5.3
 * [Airflow](https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html): Version 2.10.2
-* [Amazon S3 (Simple Storage Service)](https://aws.amazon.com/s3/): Cloud storage for data lake.
+* AWS CLI configured with valid credentials
+* Access to [Amazon S3 (Simple Storage Service)](https://aws.amazon.com/s3/)
 
 ## 2. Install and Run
 
